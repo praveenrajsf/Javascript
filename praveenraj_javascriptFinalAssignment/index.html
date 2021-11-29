@@ -1,0 +1,57 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="style/style.css">
+        <script type=" text/javascript "  src="script/script.js"></script>
+    </head>
+    <body>
+        <form action="" id="form" onsubmit="return next()">
+                <h1>Personal Information</h1>
+                <label for="" id="fe" class="right" style="visibility: hidden;color: red;">Please fill the field</label>
+                <label for="fname" class="right">Father's Name*</label>
+                <label for="name" class="left">Name as per Id proof*</label>
+                <label for="" id="ne" class="left" style="visibility: hidden;color: red;">Please fill the field</label><br><br>
+                <input type="text" id="fname" size="30" class="right">
+                <input type="text" id="name" size="30" class="left"><br><br>
+                <label for="email" class="left">Email</label>
+                <label for="" class="right">Mobile NO*</label>
+                <label for="" id="pe" class="right" style="visibility: hidden;color: red;">invalid</label>
+                <!-- dob -->
+                <label for="date1" class="right">Date of Birth*</label><br>
+                <input type="text" class="right" size="13" id="phone" placeholder="+91 0000000000">
+                <input type="text" class="right" placeholder="DD/MM/YYY" size="12" id="date1">
+                <input type="text" id="email" size="30" class="left">
+                <label for="" id="er" class="left" style="visibility: hidden;color: red;">Invalid</label><br><br>
+                <label for="cAddress1" class="left">Current Address*</label><br><br>
+                <input type="text"  class="right" placeholder="Address Line 2" size="30" id="cAddress2">
+                <input type="text" id="cAddress1" size="30" class="left" class="left" placeholder="Address Line 1">
+                <br><br>
+                <input type="text" class="right" placeholder="Zip Code" size="30">
+                <input type="text" id="city1" size="17" placeholder="City" class="left">
+                <select name="state1" id="state" class="left">
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Punjab">Punjab</option>
+                </select><br><br>
+                 <label for="pAddress1" class="left" >Permanent Address*</label> 
+                 <input type="checkbox" id="cb">Same as current Address<br>
+                 <input type="text"  class="right" placeholder="Address Line 2" size="30" id="pAddress2">
+                <input type="text" id="pAddress1" class="left" size="30" placeholder="Address Line 1"><br><br>
+                <input type="text" class="right" placeholder="Zip Code" size="30">
+                <input type="text" id="city1" size="17" placeholder="City" class="left">
+                <select name="state2" id="state2" class="left">
+                    <option value="TamilNadu">TamilNadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Punjab">Punjab</option>
+                </select><br><br>
+                <p class="left">Upload profile Photo *(JPJ/PNG format only)</p><br><br><br>
+                <p class="left">Please upload a photo of yourself.Your fase should be clearly visible.Make sure the image size does not exceed 500kb</p>
+                <br><br>
+                <br><br><br>
+                <input type="file" class="left" placeholder="Upload Photo">
+                <button onclick="next()">Next</button>
+        </form>
+    </body>
+</html>
